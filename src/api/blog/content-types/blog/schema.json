@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogs",
+  "info": {
+    "singularName": "blog",
+    "pluralName": "blogs",
+    "displayName": "blog"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "blogTitle": {
+      "type": "string",
+      "required": true
+    },
+    "blogDesc": {
+      "type": "richtext",
+      "required": true
+    },
+    "ezzghari": {
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    },
+    "catigory": {
+      "type": "enumeration",
+      "enum": [
+        "blog",
+        "news"
+      ]
+    }
+  }
+}
